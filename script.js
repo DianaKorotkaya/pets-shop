@@ -92,7 +92,7 @@ function makeItemByTemplate(item){
   myCard.querySelector('h1').textContent = item.title;
   myCard.querySelector('p').textContent = item.description;
   myCard.querySelector('span').textContent = item.price;
-  myCard.querySelector('img').textContent = item.img;
+  myCard.querySelector('img').src = item.img;
   const divTag = myCard.querySelector('.tags');
   item.tags.forEach((elem) => {
     const tag = document.createElement('span');
